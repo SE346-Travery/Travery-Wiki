@@ -21,6 +21,11 @@ A customer's reservation for a specific [[TourInstance]].
 | `payment_deadline` | TIMESTAMP | NULL | 15-minute hold limit |
 | `status` | VARCHAR(50) | DEFAULT 'PENDING' | PENDING, PAID, CANCELLED |
 
+## Constraints & Business Rules
+- **Payment**: Requires 100% upfront payment.
+- **Hold Time**: The booking is held for **15 minutes** pending payment. If unpaid, it is automatically cancelled.
+- **List Finalization**: The guest list must be finalized at least **5 days** before departure.
+
 ## Relationships
 - **Parties**: Placed by a [[Tourist]] for a [[TourInstance]].
 - **Members**: Contains multiple [[BookingMember]] entries (passengers).

@@ -4,15 +4,15 @@
 Additional services requested by customers during their stay at a [[Khách sạn]] or while on a [[Tour trọn gói]].
 
 ## Examples
-- **Dining**: Breakfast, lunch, or dinner.
-- **Wellness**: Spa treatments, massages.
-- **Utility**: Laundry services.
+- **Dining**: Breakfast, lunch, or dinner. (Should be booked at least **2 hours** in advance).
+- **Wellness**: Spa treatments, massages. (Should be booked at least **1 day** in advance to arrange technicians).
+- **Utility**: Laundry services. (App booking time indicates when the guest drops off laundry).
 - **Rentals**: Bicycles, local vehicle services.
 
 ## Management
 - **Booking**: Enabled in the app after check-in.
 - **Billing**: Recorded on a supplemental bill and settled during final checkout.
-- **Cancellation**: Can typically be canceled up to 2 hours before the scheduled time.
+- **Cancellation**: Can typically be canceled or modified up to **2 hours** before the scheduled time. Later modifications require manual intervention by the [[Lễ tân]].
 
 ## References
 - [[travery-business-docs]]

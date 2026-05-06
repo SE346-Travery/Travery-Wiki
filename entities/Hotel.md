@@ -21,9 +21,14 @@ Represents a lodging establishment owned and operated by Travery.
 | `address` | VARCHAR(500) | NOT NULL | Physical address |
 | `city_province` | VARCHAR(100) | NOT NULL | Location |
 | `latitude/longitude` | DECIMAL | NOT NULL | GPS coordinates |
-| `check_in_time` | TIME | DEFAULT '14:00' | Standard arrival |
+| `check_in_time` | TIME | DEFAULT '12:00' | Standard arrival |
 | `check_out_time` | TIME | DEFAULT '12:00' | Standard departure |
 | `refund_policy_id` | UUID | FK(refund_policies.id) | Cancellation rules |
+
+## Constraints & Business Rules
+- **Check-in/Check-out**: Check-in is available strictly from **12:00 noon**. Check-out is before **12:00 noon**.
+- **Late Check-out**: A penalty fee of 20,000 VND per hour is applied and added to the final bill.
+- **Identity**: Check-in requires presentation of a physical ID matching the booking details.
 
 ## Relationships
 - **Inventory**: Contains multiple [[RoomType]]s and physical [[Room]]s.

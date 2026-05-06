@@ -23,10 +23,14 @@ A real-world departure of a [[Tour]] on a specific date.
 | `hotel_booking_id` | UUID | NULL | Internal link to [[HotelBooking]] |
 | `start_date` | DATE | NOT NULL | Departure date |
 | `end_date` | DATE | NOT NULL | Return date |
-| `min_participants` | INT | DEFAULT 10 | Minimum for departure |
-| `max_participants` | INT | DEFAULT 40 | Vehicle/Hotel capacity |
+| `min_participants` | INT | DEFAULT 10 | Minimum for departure (Strictly 10) |
+| `max_participants` | INT | DEFAULT 30 | Vehicle/Hotel capacity (Max 30) |
 | `current_participants`| INT | DEFAULT 0 | Paid bookings |
 | `status` | VARCHAR(50) | DEFAULT 'PLANNING' | PLANNING, OPEN, FULL, IN_PROGRESS, COMPLETED, CANCELLED |
+
+## Constraints & Business Rules
+- **Capacity**: A tour strictly requires a minimum of **10 participants** to proceed and has a hard cap of **30 participants**.
+- **Under-booking**: If the minimum of 10 pax is not met by **3 days** prior to departure, Travery may cancel the instance and issue a 100% refund.
 
 ## Relationships
 - **Base**: Instantiated from [[Tour]].

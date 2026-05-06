@@ -43,3 +43,9 @@ Record of documents processed into the wiki.
 - **Concepts Added/Updated**: [[deployment-architecture]], [[git-strategy]], [[branch-protection-rules]], [[docker-dns]], [[monitoring-stack]].
 - **Entities Added/Updated**: Comprehensive update of 20+ entity pages including [[User]], [[Tourist]], [[Receptionist]], [[Coordinator]], [[Guide]], [[Admin]], [[Hotel]], [[RoomType]], [[Room]], [[Amenity]], [[HotelService]], [[Tour]], [[TourItinerary]], [[TourInstance]], [[TourBooking]], [[BookingMember]], [[Driver]], [[Station]], [[Route]], [[Coach]], [[CoachSeat]], [[CoachTrip]], [[CoachBooking]], [[CoachTicket]], [[HotelBooking]], [[HotelBookingDetail]], [[RoomAssignment]], [[AddOnOrder]], [[PaymentTransaction]], [[RefundRequest]], [[Review]], [[RefreshToken]], [[Image]], [[ChatSession]].
 - Updated [[index]] with comprehensive entity and concept list.
+
+## [2026-05-06] Ingest | System Requirements Specification (SRS)
+- **Files**: `raw/Traver-Docs/Travery - Tài liệu nghiệp vụ hệ thống.md`
+- **Action**: Formally ingested the Travery-SRS, extracting deep business rules and constraints.
+- **Pages Updated**: Enriched [[travery-system-docs]], [[TourBooking]], [[CoachBooking]], [[HotelBooking]], [[TourInstance]], [[RefundPolicy]], [[custom-tour]], [[add-on]], [[ChatSession]], and [[Hotel]] with specific operational parameters (e.g., 15-minute hold times, exact pax limits, refund thresholds, and SLA response times).
+

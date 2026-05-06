@@ -25,6 +25,11 @@ Represents a real-time consultation or support session.
 - **Parties**: Connects a [[Tourist]] with a [[Coordinator]].
 - **Outcome**: May link to a [[Tour]] if a custom package is designed.
 
+## Operations & SLA
+- **Support Hours**: Coordinators respond during business hours (8:00–17:30, Mon-Sat).
+- **SLA**: Guaranteed response within **30 minutes** during business hours. Out-of-hours messages are addressed at the start of the next business day.
+- **Review Resolution**: Travery commits to resolving all negative reviews via chat or direct contact within **48 working hours**.
+
 ## References
 - [[database-schema]]
 - [[chat-system]]

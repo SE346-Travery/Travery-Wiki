@@ -18,6 +18,13 @@ Defines named sets of cancellation rules for different services or periods.
 | `name` | VARCHAR(255) | NOT NULL | e.g., "Standard", "Holiday" |
 | `service_type` | VARCHAR(50) | NOT NULL | TOUR, HOTEL, COACH |
 
+## Standard Thresholds
+The Travery SRS defines the following default refund rules based on `service_type`:
+- **Tour**: 100% (≥7 days), 50% (3-6 days), 0% (<3 days).
+- **Coach (Xe)**: 100% (≥2 hours), 0% (<2 hours).
+- **Hotel**: 100% (≥72 hours), 50% (24-72 hours), 0% (<24 hours).
+- Note: Travery-initiated cancellations result in a guaranteed 100% refund.
+
 ## Relationships
 - **Rules**: Contains multiple [[RefundPolicyRule]] entries.
 - **Application**: Applied to [[Hotel]], [[Route]], and [[Tour]] templates.
