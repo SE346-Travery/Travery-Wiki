@@ -59,9 +59,6 @@ Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 - [[Amenity]] - Global catalog of features.
 - [[ChatSession]] - Consultation and support sessions.
 
-## 📅 Project Management
-- [[assignments-dev-backend]] - Optimized task division for 2 developers.
-
 ## 💡 Key Services
 - [[tour-tron-goi]] - Package travel service.
 - [[xe-khach-tuyen-co-dinh]] - Inter-provincial bus service.

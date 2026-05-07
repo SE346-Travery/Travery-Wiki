@@ -21,4 +21,4 @@ Specific time-based threshold for refund calculations.
 
 ## References
 - [[database-schema]]
-- [[chinh-sach-hoan-tien]]
+- [[RefundPolicy]]

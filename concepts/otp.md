@@ -1,7 +1,7 @@
 # Concept: OTP (One-Time Password)
 
 ## Definition
-A security mechanism used by [[Travery]] to verify user identity during account registration and password resets.
+A security mechanism used by [[travery]] to verify user identity during account registration and password resets.
 
 ## Technical Details
 - **Length**: Typically 6 digits.
@@ -12,7 +12,7 @@ A security mechanism used by [[Travery]] to verify user identity during account 
 ## Workflow
 1. **Trigger**: User signs up or requests a password reset.
 2. **Generation**: Backend generates a random 6-digit code.
-3. **Delivery**: Sent via [[Email Service]].
+3. **Delivery**: Sent via Email Service.
 4. **Verification**: User enters the code; backend verifies against the hashed version stored in Redis.
 
 ## References

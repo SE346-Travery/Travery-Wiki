@@ -1,7 +1,7 @@
 # Concept: ERD Diagram
 
 ## Definition
-Entity Relationship Diagrams used to model the [[Travery]] database schema.
+Entity Relationship Diagrams used to model the [[travery]] database schema.
 
 ## Levels of Detail
 - **Conceptual ERD**: High-level entities and business relationships.

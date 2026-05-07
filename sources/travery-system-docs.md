@@ -5,13 +5,13 @@ This document serves as the **System Requirements Specification (SRS)** for the 
 
 Key areas covered include:
 - **Introduction**: Reinforces Travery's model as a direct service provider.
-- **User Roles & Authentication**: Defines roles for [[Khách hàng]] (Tourist), [[Điều phối viên]], [[Hướng dẫn viên]], [[Lễ tân]], and [[Quản trị viên]]. It specifies registration via email, [[OTP]] verification, and session management.
-- **Service Workflows**: Detailed step-by-step logic for booking [[Tour trọn gói]], [[Xe khách tuyến cố định]], and [[Khách sạn]]. Highlights strict system constraints (e.g., 10-30 pax limits for tours, 15-minute payment hold locks, 20kg luggage limits for buses).
-- **Policies**: Digitized [[Chính sách hoàn tiền]] and [[No Show-up]] logic for automated calculations (e.g., 7-day, 3-6 day, <3 day thresholds).
-- **Chat & Consultations**: Describes the real-time [[Chat System]] used for general support (30-min SLA) and the collaborative design of [[Custom Tour]]s (quotes valid for 3 days).
+- **User Roles & Authentication**: Defines roles for [[khach-hang]] (Tourist), [[dieu-phoi-vien]], [[huong-dan-vien]], [[le-tan]], and [[quan-tri-vien]]. It specifies registration via email, [[otp]] verification, and session management.
+- **Service Workflows**: Detailed step-by-step logic for booking [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], and [[khach-san]]. Highlights strict system constraints (e.g., 10-30 pax limits for tours, 15-minute payment hold locks, 20kg luggage limits for buses).
+- **Policies**: Digitized [[RefundPolicy]] and No Show-up logic for automated calculations (e.g., 7-day, 3-6 day, <3 day thresholds).
+- **Chat & Consultations**: Describes the real-time [[chat-system]] used for general support (30-min SLA) and the collaborative design of [[custom-tour]]s (quotes valid for 3 days).
 - **Technical Procedures**: Incident reporting, payment failure handling (e.g., callback timeouts), and automated 1-day reminders.
 
 ## Identified Entities
-- **Organizations**: [[Travery]]
-- **People/Roles**: [[Khách hàng]], [[Điều phối viên]], [[Hướng dẫn viên]], [[Lễ tân]], [[Quản trị viên]]
-- **Concepts**: [[Tour trọn gói]], [[Xe khách tuyến cố định]], [[Khách sạn]], [[Chính sách hoàn tiền]], [[No Show-up]], [[Custom Tour]], [[Add-On]], [[OTP]], [[Chat]]
+- **Organizations**: [[travery]]
+- **People/Roles**: [[khach-hang]], [[dieu-phoi-vien]], [[huong-dan-vien]], [[le-tan]], [[quan-tri-vien]]
+- **Concepts**: [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], [[khach-san]], [[RefundPolicy]], No Show-up, [[custom-tour]], [[add-on]], [[otp]], [[chat-system]]

@@ -1,12 +1,12 @@
 # Concept: Chat System
 
 ## Definition
-A real-time communication channel integrated into the [[Travery]] application.
+A real-time communication channel integrated into the [[travery]] application.
 
 ## Purpose
-- **Consultation**: Primary tool for designing [[Custom Tour]] bookings.
+- **Consultation**: Primary tool for designing [[custom-tour]] bookings.
 - **Support**: Handling customer inquiries before, during, and after trips.
-- **Incident Reporting**: Quick reporting of on-the-road issues to the [[Điều phối viên]].
+- **Incident Reporting**: Quick reporting of on-the-road issues to the [[dieu-phoi-vien]].
 
 ## Key Features
 - **Real-time**: Instant messaging for both customers and staff.

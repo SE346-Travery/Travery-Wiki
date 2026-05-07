@@ -1,7 +1,7 @@
 # Concept: Xe khách tuyến cố định (Fixed-route Bus)
 
 ## Definition
-Inter-provincial bus services operated by [[Travery]] on fixed routes and schedules between tourist destinations.
+Inter-provincial bus services operated by [[travery]] on fixed routes and schedules between tourist destinations.
 
 ## Key Features
 - **Seat Selection**: Customers pick specific seats from a layout (individual tickets, not full vehicle rental).

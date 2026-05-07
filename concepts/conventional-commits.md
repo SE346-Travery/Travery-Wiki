@@ -1,7 +1,7 @@
 # Concept: Conventional Commits
 
 ## Definition
-A specification for adding human and machine readable meaning to commit messages within the [[Travery]] project.
+A specification for adding human and machine readable meaning to commit messages within the [[travery]] project.
 
 ## Format
 `<type>(<scope>): <description>`

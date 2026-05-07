@@ -31,4 +31,4 @@ The Travery SRS defines the following default refund rules based on `service_typ
 
 ## References
 - [[database-schema]]
-- [[chinh-sach-hoan-tien]]
+- [[RefundPolicy]]

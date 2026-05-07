@@ -20,7 +20,7 @@ The base entity representing any individual in the Travery system. It uses a **T
 | `full_name` | VARCHAR(100) | NOT NULL | Legal name |
 | `phone_number` | VARCHAR(20) | UNIQUE, NULL | Contact number |
 | `avatar_url` | VARCHAR(500) | NULL | Profile image link |
-| `role` | VARCHAR(50) | NOT NULL | [[UserRoles]] (TOURIST, ADMIN, etc.) |
+| `role` | VARCHAR(50) | NOT NULL | UserRoles (TOURIST, ADMIN, etc.) |
 | `auth_provider` | VARCHAR(20) | NOT NULL | Enum: LOCAL, GOOGLE |
 | `cometchat_uid` | VARCHAR(100) | UNIQUE, NULL | Integration ID for CometChat |
 | `status` | VARCHAR(20) | DEFAULT 'PENDING' | PENDING, ACTIVE, BANNED |

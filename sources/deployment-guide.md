@@ -14,5 +14,5 @@ A comprehensive guide detailing the infrastructure architecture, observability m
 
 ## Identified Entities
 - **Organizations**: [[travery]]
-- **Concepts**: [[deployment-architecture]], [[observability-model]], [[monitoring-stack]], [[ci-cd-pipeline]], [[git-strategy]], [[github-flow]], [[branch-protection-rules]], [[docker-dns]], [[reverse-proxy]]
-- **Entities**: [[User]], [[Tour]], [[Hotel]], [[Postgres]], [[Redis]], [[Nginx]], [[Grafana-Alloy]], [[Prometheus]], [[Loki]], [[Grafana]]
+- **Concepts**: [[deployment-architecture]], observability-model, [[monitoring-stack]], [[ci-cd-pipeline]], [[git-strategy]], github-flow, [[branch-protection-rules]], [[docker-dns]], reverse-proxy
+- **Entities**: [[User]], [[Tour]], [[Hotel]], Postgres, Redis, Nginx, Grafana-Alloy, Prometheus, Loki, Grafana

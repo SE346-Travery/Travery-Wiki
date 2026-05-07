@@ -18,4 +18,4 @@ A high-level synthesis of the Travery database design, focusing on the relations
 - **Package Tours**: Integration of Hotel and Coach resources into a single booking flow.
 
 ## Identified Entities
-- **Clusters**: [[User]], [[Fleet]], [[Fixed-Route]], [[Hotel]], [[Package-Tour]], [[Auxiliary]]
+- **Clusters**: [[User]], Fleet, Fixed-Route, [[Hotel]], Package-Tour, Auxiliary

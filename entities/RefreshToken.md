@@ -22,7 +22,7 @@ Used for maintaining user sessions and issuing new access tokens without re-auth
 
 ## Relationships
 - **User**: Belong to one [[User]].
-- **Auth**: Part of the [[JWT Authentication]] flow.
+- **Auth**: Part of the [[jwt-authentication]] flow.
 
 ## References
 - [[database-schema]]

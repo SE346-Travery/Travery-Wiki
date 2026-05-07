@@ -25,7 +25,7 @@ A reservation for tickets on a [[CoachTrip]].
 - **Payment**: Requires 100% upfront payment in a single transaction.
 - **Hold Time**: The selected seats are temporarily locked for **15 minutes**.
 - **Luggage Limit**: Customers are allowed up to **20 kg** of free luggage.
-- **Boarding**: Customers must be at the pickup point 15-30 minutes prior to departure. The bus does not wait for late passengers (see [[No Show-up]]).
+- **Boarding**: Customers must be at the pickup point 15-30 minutes prior to departure. The bus does not wait for late passengers (see No Show-up).
 
 ## Relationships
 - **Inventory**: Spawns multiple [[CoachTicket]] records.

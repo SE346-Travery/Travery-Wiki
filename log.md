@@ -49,3 +49,10 @@ Record of documents processed into the wiki.
 - **Action**: Formally ingested the Travery-SRS, extracting deep business rules and constraints.
 - **Pages Updated**: Enriched [[travery-system-docs]], [[TourBooking]], [[CoachBooking]], [[HotelBooking]], [[TourInstance]], [[RefundPolicy]], [[custom-tour]], [[add-on]], [[ChatSession]], and [[Hotel]] with specific operational parameters (e.g., 15-minute hold times, exact pax limits, refund thresholds, and SLA response times).
 
+## [2026-05-07] Lint | Remove Assignments
+- **Action**: Removed `assignments-dev-backend.md` from the wiki to match the deleted raw file (Backend API style doesn't use `/api/v1/`).
+- **Pages Updated**: Removed reference from [[index]].
+
+## [2026-05-07] Lint | Fix Dead Links
+- **Action**: Scanned the entire wiki for broken `[[links]]`. Re-mapped friendly-name links to proper file slugs (e.g., `[[Custom Tour]]` -> `[[custom-tour]]`, `[[Điều phối viên]]` -> `[[dieu-phoi-vien]]`) and removed formatting for completely unresolvable dead links (e.g., `[[Nginx]]` -> `Nginx`).
+- **Pages Updated**: Updated dozens of concept, entity, and organization pages to ensure complete link consistency.

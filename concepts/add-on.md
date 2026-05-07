@@ -1,7 +1,7 @@
 # Concept: Add-On
 
 ## Definition
-Additional services requested by customers during their stay at a [[Khách sạn]] or while on a [[Tour trọn gói]].
+Additional services requested by customers during their stay at a [[khach-san]] or while on a [[tour-tron-goi]].
 
 ## Examples
 - **Dining**: Breakfast, lunch, or dinner. (Should be booked at least **2 hours** in advance).
@@ -12,7 +12,7 @@ Additional services requested by customers during their stay at a [[Khách sạn
 ## Management
 - **Booking**: Enabled in the app after check-in.
 - **Billing**: Recorded on a supplemental bill and settled during final checkout.
-- **Cancellation**: Can typically be canceled or modified up to **2 hours** before the scheduled time. Later modifications require manual intervention by the [[Lễ tân]].
+- **Cancellation**: Can typically be canceled or modified up to **2 hours** before the scheduled time. Later modifications require manual intervention by the [[le-tan]].
 
 ## References
 - [[travery-business-docs]]

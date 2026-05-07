@@ -24,7 +24,7 @@ A reservation for lodging. Can be stand-alone or part of a [[TourInstance]].
 ## Constraints & Business Rules
 - **Payment**: 100% upfront payment is required.
 - **Hold Time**: Rooms are locked for **15 minutes** while waiting for payment confirmation.
-- **No-Show**: If a guest does not arrive by 23:59 on the check-in date without prior notice, the room is released with no refund (see [[No Show-up]]).
+- **No-Show**: If a guest does not arrive by 23:59 on the check-in date without prior notice, the room is released with no refund (see No Show-up).
 
 ## Relationships
 - **Details**: Contains multiple [[HotelBookingDetail]] entries.

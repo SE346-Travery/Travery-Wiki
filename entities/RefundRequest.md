@@ -25,4 +25,4 @@ A request to return funds for a cancelled service.
 
 ## References
 - [[database-schema]]
-- [[chinh-sach-hoan-tien]]
+- [[RefundPolicy]]

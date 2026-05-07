@@ -1,7 +1,7 @@
 # Role: Khách hàng (Customer / Tourist)
 
 ## Description
-The primary user of the [[Travery]] application who consumes travel services.
+The primary user of the [[travery]] application who consumes travel services.
 
 ## Responsibilities
 - Searching for tours, buses, and hotels.

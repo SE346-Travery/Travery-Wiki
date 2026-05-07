@@ -5,4 +5,4 @@
 - **Role**: Developer / Contact for the Travery Team.
 
 ## Mentioned In
-- `OpenApiConfig.java` as the contact point for the [[Travery]] API.
+- `OpenApiConfig.java` as the contact point for the [[travery]] API.

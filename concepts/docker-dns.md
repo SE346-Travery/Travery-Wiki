@@ -13,7 +13,7 @@ An embedded DNS server provided by Docker for containers attached to a user-defi
 
 ## Mechanism
 - **Service Discovery**: Allows containers to resolve each other by their **container names** instead of ephemeral IP addresses.
-- **Example**: The [[Spring-Boot]] app connects to the database using `jdbc:postgresql://postgres:5432` where `postgres` is the container name.
+- **Example**: The Spring-Boot app connects to the database using `jdbc:postgresql://postgres:5432` where `postgres` is the container name.
 
 ## Benefits
 - **Plug-and-Play**: Eliminates the need for manual IP configuration.
