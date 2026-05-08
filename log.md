@@ -56,3 +56,12 @@ Record of documents processed into the wiki.
 ## [2026-05-07] Lint | Fix Dead Links
 - **Action**: Scanned the entire wiki for broken `[[links]]`. Re-mapped friendly-name links to proper file slugs (e.g., `[[Custom Tour]]` -> `[[custom-tour]]`, `[[Điều phối viên]]` -> `[[dieu-phoi-vien]]`) and removed formatting for completely unresolvable dead links (e.g., `[[Nginx]]` -> `Nginx`).
 - **Pages Updated**: Updated dozens of concept, entity, and organization pages to ensure complete link consistency.
+
+## [2026-05-08] Ingest | Backend Evolution
+- **Source**: `raw/Travery-Backend/`
+- **Action**: Ingested updates from the backend codebase.
+- **Key Changes**: 
+    - Updated [[travery-backend]] with Hibernate Search (Lucene), Virtual Threads, and social login dependencies.
+    - Created [[Destination]] entity.
+    - Updated [[Tour]] to reflect the structural shift from `destination_code` (String) to `destination_id` (FK to Destination).
+    - Updated [[index]] with the new entity.

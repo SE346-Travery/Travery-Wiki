@@ -34,6 +34,7 @@ Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 - [[Guide]] - Field staff entity.
 - [[Admin]] - System administrator entity.
 - [[Tour]] - Core tour definition and pricing.
+- [[Destination]] - Geographical regions for tours.
 - [[TourInstance]] - Specific departures and assignments.
 - [[TourBooking]] - Customer bookings and status.
 - [[BookingMember]] - Individual members in a booking (Polymorphic).
