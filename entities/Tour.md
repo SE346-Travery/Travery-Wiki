@@ -5,7 +5,7 @@ tags: [asset, travel]
 sources: [database-schema, erd-summary]
 updated: 2026-05-06
 ---
-
+	
 # Entity: Tour
 
 Defines a tour package template. Can be a standard offering or a [[custom-tour]].

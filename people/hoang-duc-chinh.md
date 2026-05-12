@@ -1,3 +1,10 @@
+---
+title: "Hoàng Đức Chính"
+category: people
+tags: [contact, lead]
+sources: [travery-system-docs]
+updated: 2026-05-12
+---
 # Person: Hoàng Đức Chính
 
 ## Details

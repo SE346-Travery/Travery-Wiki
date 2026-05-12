@@ -1,3 +1,10 @@
+---
+title: "Khách hàng"
+category: people
+tags: [role, user]
+sources: [travery-system-docs]
+updated: 2026-05-12
+---
 # Role: Khách hàng (Customer / Tourist)
 
 ## Description

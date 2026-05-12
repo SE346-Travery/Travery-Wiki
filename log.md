@@ -65,3 +65,20 @@ Record of documents processed into the wiki.
     - Created [[Destination]] entity.
     - Updated [[Tour]] to reflect the structural shift from `destination_code` (String) to `destination_id` (FK to Destination).
     - Updated [[index]] with the new entity.
+
+## [2026-05-12] Ingest | Seed Data & Service SLAs
+- **Sources**: `raw/Travery-Backend/docs/Seed_Accounts.md`, updated `raw/Travery-Docs/`
+- **Action**: Ingested development seed data and updated system business rules.
+- **New Source**: [[seed-accounts]]
+- **New People**: Created 9 seed user profiles ([[nguyen-van-hung]], [[tran-thi-mai]], [[le-minh-tuan]], [[pham-quoc-bao]], [[hoang-thi-lan]], [[vo-thanh-tam]], [[dang-ngoc-han]], [[bui-minh-khoi]], [[ngo-thi-hong]]).
+- **New Organizations**: Created [[travery-grand-hotel]] and [[travery-beach-resort]].
+- **New Concepts**: Created [[service-level-agreement]] (SLAs) and [[payment-failure-handling]].
+- **Updates**:
+    - Refreshed [[travery-system-docs]] with specific SLAs and failure handling logic.
+    - Fixed [[RefundPolicyRule]] to use `days_before` instead of `hours_before_departure` to align with backend code.
+    - Updated [[index]] with all new pages.
+
+## [2026-05-12] Lint | Align Participant Limits with SRS
+- **Action**: Corrected tour participant limits across the wiki to match the **Travery-SRS** and backend implementation.
+- **Key Change**: Updated maximum participants from 30 to **40** (default).
+- **Pages Updated**: [[travery-system-docs]], [[tour-tron-goi]], and [[TourInstance]].

@@ -3,7 +3,7 @@ title: "TourInstance"
 category: entities
 tags: [operations, execution]
 sources: [database-schema, erd-summary]
-updated: 2026-05-06
+updated: 2026-05-12
 ---
 
 # Entity: TourInstance
@@ -12,24 +12,24 @@ A real-world departure of a [[Tour]] on a specific date.
 
 ## Database Table: `tour_instances`
 
-| Column | Data Type | Constraints | Description |
-|---|---|---|---|
-| `id` | UUID | PK | Unique identifier |
-| `tour_id` | UUID | FK(tours.id) | Base template |
-| `coordinator_id` | UUID | FK(users.id) | Operational manager |
-| `guide_id` | UUID | FK(users.id), NULL | Field lead |
-| `coach_id` | UUID | FK(coaches.id), NULL | Assigned vehicle |
-| `driver_id` | UUID | FK(drivers.id), NULL | Assigned driver |
-| `hotel_booking_id` | UUID | NULL | Internal link to [[HotelBooking]] |
-| `start_date` | DATE | NOT NULL | Departure date |
-| `end_date` | DATE | NOT NULL | Return date |
-| `min_participants` | INT | DEFAULT 10 | Minimum for departure (Strictly 10) |
-| `max_participants` | INT | DEFAULT 30 | Vehicle/Hotel capacity (Max 30) |
-| `current_participants`| INT | DEFAULT 0 | Paid bookings |
-| `status` | VARCHAR(50) | DEFAULT 'PLANNING' | PLANNING, OPEN, FULL, IN_PROGRESS, COMPLETED, CANCELLED |
+| Column                 | Data Type   | Constraints          | Description                                             |
+| ---------------------- | ----------- | -------------------- | ------------------------------------------------------- |
+| `id`                   | UUID        | PK                   | Unique identifier                                       |
+| `tour_id`              | UUID        | FK(tours.id)         | Base template                                           |
+| `coordinator_id`       | UUID        | FK(users.id)         | Operational manager                                     |
+| `guide_id`             | UUID        | FK(users.id), NULL   | Field lead                                              |
+| `coach_id`             | UUID        | FK(coaches.id), NULL | Assigned vehicle                                        |
+| `driver_id`            | UUID        | FK(drivers.id), NULL | Assigned driver                                         |
+| `hotel_booking_id`     | UUID        | NULL                 | Internal link to [[HotelBooking]]                       |
+| `start_date`           | DATE        | NOT NULL             | Departure date                                          |
+| `end_date`             | DATE        | NOT NULL             | Return date                                             |
+| `min_participants`     | INT         | DEFAULT 10           | Minimum for departure (Strictly 10)                     |
+| `max_participants`     | INT         | DEFAULT 40           | Vehicle/Hotel capacity (Default 40)                     |
+| `current_participants` | INT         | DEFAULT 0            | Paid bookings                                           |
+| `status`               | VARCHAR(50) | DEFAULT 'PLANNING'   | PLANNING, OPEN, FULL, IN_PROGRESS, COMPLETED, CANCELLED |
 
 ## Constraints & Business Rules
-- **Capacity**: A tour strictly requires a minimum of **10 participants** to proceed and has a hard cap of **30 participants**.
+- **Capacity**: A tour strictly requires a minimum of **10 participants** to proceed and has a default cap of **40 participants** (adjustable per instance).
 - **Under-booking**: If the minimum of 10 pax is not met by **3 days** prior to departure, Travery may cancel the instance and issue a 100% refund.
 
 ## Relationships

@@ -12,13 +12,13 @@ Physical vehicle assets owned by Travery.
 
 ## Database Table: `coaches`
 
-| Column | Data Type | Constraints | Description |
-|---|---|---|---|
-| `id` | UUID | PK | Unique identifier |
-| `license_plate` | VARCHAR(20) | UNIQUE, NOT NULL | Registry plate |
-| `coach_type` | VARCHAR(50) | NOT NULL | SEAT, BED, LIMOUSINE |
-| `capacity` | INT | NOT NULL | Total seats/beds |
-| `status` | VARCHAR(20) | DEFAULT 'ACTIVE' | ACTIVE, MAINTENANCE |
+| Column          | Data Type   | Constraints      | Description          |
+| --------------- | ----------- | ---------------- | -------------------- |
+| `id`            | UUID        | PK               | Unique identifier    |
+| `license_plate` | VARCHAR(20) | UNIQUE, NOT NULL | Registry plate       |
+| `coach_type`    | VARCHAR(50) | NOT NULL         | SEAT, BED, LIMOUSINE |
+| `capacity`      | INT         | NOT NULL         | Total seats/beds     |
+| `status`        | VARCHAR(20) | DEFAULT 'ACTIVE' | ACTIVE, MAINTENANCE  |
 
 ## Relationships
 - **Inventory**: Contains multiple [[CoachSeat]] definitions.

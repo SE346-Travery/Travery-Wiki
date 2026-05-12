@@ -5,7 +5,7 @@ tags: [transaction, detail]
 sources: [database-schema]
 updated: 2026-05-06
 ---
-
+	
 # Entity: HotelBookingDetail
 
 Specific room type requirements within a [[HotelBooking]].

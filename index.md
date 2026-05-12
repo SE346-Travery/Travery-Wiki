@@ -3,28 +3,34 @@
 Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 
 ## 📚 Source Documents
-- [[travery-business-docs]] - Business overview and core services.
-- [[travery-system-docs]] - Technical requirements and system workflows.
-- [[github-cicd-rules]] - Development and CI/CD guidelines.
 - [[drawio-diagrams]] - System architecture and schema diagrams.
+- [[github-cicd-rules]] - Development and CI/CD guidelines.
+- [[seed-accounts]] - Development seed data and test accounts.
 - [[travery-backend]] - Backend technical stack and infrastructure.
+- [[travery-business-docs]] - Business overview and core services.
 - [[travery-frontend]] - Frontend technical stack and platform support.
+- [[travery-system-docs]] - Technical requirements and system workflows.
 
 ## 🏢 Organizations
 - [[travery]] - The main enterprise.
+- [[travery-beach-resort]] - Seed hotel in Nha Trang.
+- [[travery-grand-hotel]] - Seed hotel in TP. Hồ Chí Minh.
 
 ## 👥 People & Roles
-- [[khach-hang]] - Customer / Tourist role.
+- [[dang-ngoc-han]] - Seed Receptionist.
 - [[dieu-phoi-vien]] - Office management and consultation role.
-- [[huong-dan-vien]] - Field execution and guide role.
-- [[le-tan]] - Hotel counter management role.
-- [[quan-tri-vien]] - System administration role.
 - [[hoang-duc-chinh]] - Technical lead / contact point.
-- [[Tourist]] - Customer/Client entity.
-- [[Receptionist]] - Hotel staff entity.
-- [[Coordinator]] - Management staff entity.
-- [[Guide]] - Field staff entity.
-- [[Admin]] - System administrator entity.
+- [[hoang-thi-lan]] - Seed Guide.
+- [[huong-dan-vien]] - Field execution and guide role.
+- [[khach-hang]] - Customer / Tourist role.
+- [[le-minh-tuan]] - Seed Coordinator (COACH).
+- [[le-tan]] - Hotel counter management role.
+- [[ngo-thi-hong]] - Seed Tourist.
+- [[nguyen-van-hung]] - Seed Coordinator (TOUR).
+- [[pham-quoc-bao]] - Seed Guide.
+- [[quan-tri-vien]] - System administration role.
+- [[tran-thi-mai]] - Seed Coordinator (HOTEL).
+- [[vo-thanh-tam]] - Seed Receptionist.
 
 ## 🗄 System Entities
 - [[User]] - Base user entity and roles.
@@ -79,4 +85,6 @@ Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 - [[jwt-authentication]] - JWT flow and security.
 - [[monitoring-stack]] - Observability with Alloy, Prometheus, Loki, Grafana.
 - [[otp-management]] - OTP generation and verification logic.
+- [[payment-failure-handling]] - Graceful degradation during transaction errors.
+- [[service-level-agreement]] - Operational response and processing targets.
 - [[use-case-diagram]] - Functional requirement modeling.

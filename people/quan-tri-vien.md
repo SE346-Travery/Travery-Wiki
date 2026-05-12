@@ -1,3 +1,10 @@
+---
+title: "Quản trị viên"
+category: people
+tags: [role, staff, admin]
+sources: [travery-system-docs]
+updated: 2026-05-12
+---
 # Role: Quản trị viên (Admin)
 
 ## Description

@@ -1,3 +1,10 @@
+---
+title: "Điều phối viên"
+category: people
+tags: [role, staff, management]
+sources: [travery-system-docs]
+updated: 2026-05-12
+---
 # Role: Điều phối viên (Coordinator)
 
 ## Description

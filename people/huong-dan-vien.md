@@ -1,3 +1,10 @@
+---
+title: "Hướng dẫn viên"
+category: people
+tags: [role, staff]
+sources: [travery-system-docs]
+updated: 2026-05-12
+---
 # Role: Hướng dẫn viên (Guide)
 
 ## Description
