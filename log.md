@@ -82,3 +82,14 @@ Record of documents processed into the wiki.
 - **Action**: Corrected tour participant limits across the wiki to match the **Travery-SRS** and backend implementation.
 - **Key Change**: Updated maximum participants from 30 to **40** (default).
 - **Pages Updated**: [[travery-system-docs]], [[tour-tron-goi]], and [[TourInstance]].
+
+## [2026-05-14] Ingest | Search & Refactoring Update
+- **Source**: `raw/Travery-Backend/`
+- **Action**: Ingested significant refactorings and Search Engine optimizations.
+- **Key Changes**: 
+    - **Entity Refactoring**: Moved `min_participants` and `max_participants` from [[TourInstance]] to [[Tour]]. Added `average_rating` and `duration_days` to [[Tour]].
+    - **Participant Limits**: Reverted default maximum participants to **30** (capped at 30 in code).
+    - **Search Integration**: Documented Hibernate Search (Lucene) indexing on [[Tour]] and [[TourInstance]].
+    - **Schema Update**: Documented change from `hours_before_departure` to `days_before` in [[RefundPolicyRule]].
+    - **Seeding**: New `V3` migration identified for seeding standard refund policies.
+- **Pages Updated**: [[travery-backend]], [[Tour]], [[TourInstance]], [[RefundPolicyRule]], [[travery-system-docs]], [[tour-tron-goi]].

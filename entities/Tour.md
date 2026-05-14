@@ -22,10 +22,19 @@ Defines a tour package template. Can be a standard offering or a [[custom-tour]]
 | `requested_by_user_id` | UUID          | FK(users.id), NULL     | Requester (if Custom)       |
 | `destination_id`       | UUID          | FK(destinations.id)    | Target [[Destination]]      |
 | `pickup_location`      | VARCHAR(500)  | NOT NULL               | Meeting point               |
+| `average_rating`       | DOUBLE        | DEFAULT 0.0            | Indexed for sorting         |
 | `price_per_adult`      | DECIMAL(12,2) | NOT NULL               | Cost for adults             |
 | `price_per_child`      | DECIMAL(12,2) | NOT NULL               | Cost for children           |
+| `min_participants`     | INT           | DEFAULT 10             | Minimum pax for departure   |
+| `max_participants`     | INT           | DEFAULT 30             | Maximum capacity            |
+| `duration_days`        | INT           | DEFAULT 1              | Length of tour              |
 | `is_custom`            | BOOLEAN       | DEFAULT FALSE          | Flag for personalized tours |
 | `refund_policy_id`     | UUID          | FK(refund_policies.id) | Cancellation rules          |
+
+## Search Optimization (Lucene)
+- **Full-Text Fields**: `name`, `description`.
+- **Indexed Embedded**: [[Destination]] and [[TourInstance]] list.
+- **Sortable Fields**: `average_rating`, `price_per_adult`.
 
 ## Relationships
 - **Structure**: Includes multiple [[TourItinerary]] days.

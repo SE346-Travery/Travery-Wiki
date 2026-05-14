@@ -6,7 +6,7 @@ This document serves as the **System Requirements Specification (SRS)** for the 
 Key areas covered include:
 - **Introduction**: Reinforces Travery's model as a direct service provider.
 - **User Roles & Authentication**: Defines roles for [[khach-hang]] (Tourist), [[dieu-phoi-vien]], [[huong-dan-vien]], [[le-tan]], and [[quan-tri-vien]]. It specifies registration via email, [[otp]] verification, and session management.
-- **Service Workflows**: Detailed step-by-step logic for booking [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], and [[khach-san]]. Highlights strict system constraints (e.g., 10-40 pax limits for tours, 15-minute payment hold locks, 20kg luggage limits for buses).
+- **Service Workflows**: Detailed step-by-step logic for booking [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], and [[khach-san]]. Highlights strict system constraints (e.g., 10-30 pax limits for tours, 15-minute payment hold locks, 20kg luggage limits for buses).
 - **Payment & Failure Handling**:
     - **Hold Time**: 15 minutes for all services.
     - **Failure Modes**: System must handle rejected transactions, connection errors, and callback timeouts (manual confirmation by [[dieu-phoi-vien]] required if callback fails but payment succeeded).

@@ -4,7 +4,7 @@
 The flagship service of [[travery]], providing fixed-itinerary travel programs that include transportation, accommodation, meals, and sightseeing activities.
 
 ## Key Features
-- **Capacity**: Minimum 10 people, maximum 40 people.
+- **Capacity**: Minimum 10 people, maximum 30 people.
 - **Payment**: 100% upfront at the time of booking.
 - **Hold Time**: 15 minutes to complete payment.
 - **Coordination**: Requires manual assignment of vehicles and drivers by a [[dieu-phoi-vien]].
