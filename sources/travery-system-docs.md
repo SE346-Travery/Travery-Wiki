@@ -21,4 +21,5 @@ Key areas covered include:
 ## Identified Entities
 - **Organizations**: [[travery]]
 - **People/Roles**: [[khach-hang]], [[dieu-phoi-vien]], [[huong-dan-vien]], [[le-tan]], [[quan-tri-vien]]
-- **Concepts**: [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], [[khach-san]], [[RefundPolicy]], No Show-up, [[custom-tour]], [[add-on]], [[otp]], [[chat-system]], [[payment-failure-handling]], [[SLA]]
+- Concepts**: [[tour-tron-goi]], [[xe-khach-tuyen-co-dinh]], [[khach-san]], [[RefundPolicy]], No Show-up, [[custom-tour]], [[add-on]], [[otp]], [[chat-system]], [[payment-failure-handling]], [[service-level-agreement]]
+

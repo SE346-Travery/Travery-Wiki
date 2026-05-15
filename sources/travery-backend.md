@@ -2,12 +2,13 @@
 
 ## Summary
 The backend service for the **Travery** platform, built using Java and Spring Boot. It handles core business logic, authentication, data management, and monitoring.
+- **Lead Developer**: [[hoang-duc-chinh]]
 
 **Technical Stack**:
 - **Framework**: Spring Boot 4.0.4, Java 25 (with **Virtual Threads** enabled).
 - **Database**: PostgreSQL 17
-- **Caching**: Redis 8
-- **Search Engine**: **Hibernate Search 8.0.0.Final** with **Lucene** backend. Supports full-text search on [[Tour]] and [[TourInstance]] with indexed fields like name, description, and status.
+- **Caching**: Redis 8 for distributed state; in-memory caching for featured tours.
+- **Search Engine**: **Hibernate Search 8.2.2.Final** with **Lucene** backend. Supports advanced full-text search on [[Tour]] and [[TourInstance]] with fuzzy matching, term boosting, and nested predicates for availability.
 - **Authentication**: JWT (JSON Web Tokens) with [[otp]] verification. Added `spring-boot-starter-security-oauth2-client` for future social login support.
 - **Third-party Services**: Cloudinary (Image/Video storage), Gmail SMTP (Email notifications).
 - **Code Quality**: **Spotless** (Google Java Format) and **SpotBugs** integrated into the Maven build.
@@ -20,7 +21,7 @@ The backend service for the **Travery** platform, built using Java and Spring Bo
 ## Identified Entities
 - **Organizations**: [[travery]]
 - **Entities**: [[User]], [[Tour]], [[Destination]], [[TourInstance]], [[Hotel]], [[Coach]], [[ChatSession]]
-- **Concepts**: [[otp]], JWT, Token Blacklist, Refresh Token Rotation, Full-text Search (Lucene)
+- **Concepts**: [[otp]], JWT, Token Blacklist, Refresh Token Rotation, [[full-text-search]] (Lucene)
 
 ## Update History
 ### [2026-05-14] Refactoring & Search Optimization
@@ -28,3 +29,10 @@ The backend service for the **Travery** platform, built using Java and Spring Bo
 - **New Fields**: Added `average_rating` and `duration_days` to [[Tour]].
 - **Search**: Implemented `@Indexed` on `Tour` (name, description, destination) and `TourInstance` (start_date, status).
 - **Schema**: `refund_policy_rules` changed from `hours_before_departure` to `days_before`.
+
+### [2026-05-15] Advanced Search & Coordinator APIs
+- **Search Logic**: Implemented fuzzy search (typo tolerance) and boosting (name > description).
+- **APIs**:
+    - **Public**: Search/Filter tours by keyword, price, rating, and destination.
+    - **Coordinator**: Dedicated endpoints for managing tour instances and templates.
+- **Infrastructure**: Added `docker-compose-prod.yml` and unified `Dockerfile` for multi-stage builds.

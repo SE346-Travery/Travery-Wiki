@@ -4,6 +4,7 @@
 A security mechanism used by [[travery]] to verify user identity during account registration and password resets.
 
 ## Technical Details
+- **Mechanism**: See [[otp-management]] for deep-dive on Redis implementation and atomic verification.
 - **Length**: Typically 6 digits.
 - **TTL (Time To Live)**: 5 minutes.
 - **Rate Limiting**: Includes cooldowns between resend requests and maximum attempts to prevent brute force attacks.

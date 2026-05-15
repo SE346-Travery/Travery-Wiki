@@ -43,9 +43,8 @@ Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 - [[Destination]] - Geographical regions for tours.
 - [[TourInstance]] - Specific departures and assignments.
 - [[TourBooking]] - Customer bookings and status.
-- [[BookingMember]] - Individual members in a booking (Polymorphic).
-- [[Vehicle]] - Fleet assets (Bus, Minivan).
 - [[Coach]] - Physical bus assets and types.
+
 - [[CoachSeat]] - Seat layout for coaches.
 - [[Driver]] - Name, license, and status.
 - [[Station]] - Physical terminals and pickup points.
@@ -81,6 +80,7 @@ Welcome to the internal knowledge base for the **Travery** travel ecosystem.
 - [[deployment-architecture]] - Multi-server infrastructure layout.
 - [[docker-dns]] - Internal container service discovery.
 - [[erd-diagram]] - Database schema modeling.
+- [[full-text-search]] - Advanced Lucene-based search logic.
 - [[git-strategy]] - GitHub Flow and branching model.
 - [[jwt-authentication]] - JWT flow and security.
 - [[monitoring-stack]] - Observability with Alloy, Prometheus, Loki, Grafana.

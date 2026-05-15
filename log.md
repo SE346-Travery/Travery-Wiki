@@ -93,3 +93,24 @@ Record of documents processed into the wiki.
     - **Schema Update**: Documented change from `hours_before_departure` to `days_before` in [[RefundPolicyRule]].
     - **Seeding**: New `V3` migration identified for seeding standard refund policies.
 - **Pages Updated**: [[travery-backend]], [[Tour]], [[TourInstance]], [[RefundPolicyRule]], [[travery-system-docs]], [[tour-tron-goi]].
+
+## [2026-05-15] Ingest | Advanced Search & Coordinator APIs
+- **Source**: `raw/Travery-Backend/`
+- **Action**: Ingested advanced search logic and coordinator-specific functional updates.
+- **Key Changes**:
+    - **Search Engine**: Updated Hibernate Search to **8.2.2.Final**. Created [[full-text-search]] concept.
+    - **Logic**: Documented fuzzy search, term boosting, and nested availability filtering in `TourSearchCustomRepositoryImpl`.
+    - **APIs**: Documented new Coordinator endpoints for tour instance lifecycle management.
+    - **Caching**: Documented hybrid caching strategy (Redis + local Spring Cache).
+    - **Infrastructure**: Documented production Docker configurations.
+- **New Page**: [[full-text-search]].
+- **Pages Updated**: [[travery-backend]], [[monitoring-stack]], [[index]].
+
+## [2026-05-15] Lint | Maintenance & Consolidation
+- **Action**: Cleaned up redundant entities and fixed broken links identified during cross-referencing with the database schema.
+- **Key Changes**:
+    - **Consolidation**: Deleted `TourBookingMember` (use [[BookingMember]]) and `Vehicle` (use [[Coach]]).
+    - **Dead Link Fixes**: Re-mapped `[[SLA]]` to [[service-level-agreement]].
+    - **Cross-Referencing**: Linked [[full-text-search]] from [[Tour]] and [[travery-backend]]. Linked [[otp-management]] from [[otp]].
+    - **Metadata**: Linked [[hoang-duc-chinh]] (Lead Developer) as the primary contact in [[travery-backend]].
+- **Pages Updated**: [[index]], [[travery-system-docs]], [[otp]], [[travery-backend]], [[Tour]].

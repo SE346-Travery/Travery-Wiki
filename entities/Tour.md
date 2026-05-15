@@ -31,7 +31,7 @@ Defines a tour package template. Can be a standard offering or a [[custom-tour]]
 | `is_custom`            | BOOLEAN       | DEFAULT FALSE          | Flag for personalized tours |
 | `refund_policy_id`     | UUID          | FK(refund_policies.id) | Cancellation rules          |
 
-## Search Optimization (Lucene)
+## Search Optimization ([[full-text-search]])
 - **Full-Text Fields**: `name`, `description`.
 - **Indexed Embedded**: [[Destination]] and [[TourInstance]] list.
 - **Sortable Fields**: `average_rating`, `price_per_adult`.
